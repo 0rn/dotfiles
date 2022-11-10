@@ -17,3 +17,4 @@ end
 
 cmd("SourceConfig", ReloadConfig)
 cmd("EditConfig", "cd ~/.config/nvim/lua | edit ~/.config/nvim/init.lua")
+cmd("SourceFile", "luafile %")

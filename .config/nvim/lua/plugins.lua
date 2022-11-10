@@ -3,6 +3,7 @@ return require( "packer" ).startup( function( use )
 
   -- Language Tools --------------------------------------------------
   use "neovim/nvim-lspconfig"         -- | Default config for NeoVim lsp
+  use "williamboman/mason.nvim"
 
   use "hrsh7th/cmp-nvim-lsp"          -- | LSP source for nvim-cmp
   use "hrsh7th/cmp-buffer"            -- | In buffer completion
@@ -32,7 +33,7 @@ return require( "packer" ).startup( function( use )
   use "catppuccin/nvim"
 
   use "rebelot/kanagawa.nvim"
-  use "~/devel/nvim/silksong"
+  --use "~/devel/nvim/silksong"
 
 
   -- Tools -----------------------------------------------------------

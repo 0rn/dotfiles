@@ -1,5 +1,8 @@
 local M = {}
 
+-- mason setup
+require("mason").setup()
+
 
 vim.api.nvim_set_keymap("n", "\\r",  "<cmd>LspStop<CR><cmd>LspStart<CR>", {noremap=true,silent=true})
 
@@ -173,7 +176,7 @@ cmp.setup({
 })
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
+capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
 -- Avoid restart on filetype
 local singleSet = {}
