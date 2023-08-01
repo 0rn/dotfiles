@@ -5,6 +5,10 @@
 \usepackage{amsmath}
 \usepackage[usenames]{color}
 
+% In zim use settings:
+% text-size = 16pt (maybe doesnt do anyting)
+% dpi = 300 (important)
+
 \begin{document}
 [% IF dark_mode %]
     \color{white}
@@ -12,6 +16,7 @@
 
 % No empty lines allowed in math block !
 \begin{align*}
+    \textstyle % fractions & integrals take up less space
 [% equation -%]
 \end{align*}
 
