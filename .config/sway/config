@@ -278,5 +278,8 @@ exec gammastep -l -37.84:144.94 -m wayland &
 # start thunar file manager in daemon mode
 exec GTK_THEME='Nordic' thunar --daemon
 
+# start conky
+exec "$HOME/.config/conky/run-conky.sh"
+
 
 include /etc/sway/config.d/*

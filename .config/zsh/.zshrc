@@ -18,6 +18,8 @@ alias la="ls -vA"
 alias ll="ls -o"
 alias lla="ll -vA"
 
+alias dh="du -h -d 1"
+
 # git aliases
 alias gs="git status --short"
 alias gl="git log --oneline"
